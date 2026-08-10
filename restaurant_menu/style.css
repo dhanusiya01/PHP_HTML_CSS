@@ -1,0 +1,256 @@
+/* General Styling */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+
+
+/* Header */
+
+
+header {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+header p {
+    font-size: 18px;
+}
+
+
+
+
+/* Navigation */
+
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: orange;
+}
+
+
+
+
+/* Main Content */
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+
+main > h2 {
+    text-align: center;
+    color: #8b0000;
+    font-size: 30px;
+}
+
+
+.intro {
+    text-align: center;
+}
+
+
+
+
+/* Menu Category */
+
+
+.menu-category {
+    background-color: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+.menu-category h2 {
+    color: #8b0000;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Menu Items */
+
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+
+.menu-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+
+.menu-item p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+
+.menu-item span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+
+
+
+/* Order Section */
+
+
+.order-section {
+    background-color: #ffe4c4;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+.order-section h2 {
+    color: #8b0000;
+}
+
+
+button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #600000;
+}
+
+
+
+
+/* Footer */
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+
+
+/* Responsive Design */
+
+
+@media screen and (max-width: 600px) {
+
+
+    header h1 {
+        font-size: 28px;
+    }
+
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+
+    main {
+        width: 95%;
+    }
+
+
+    .menu-category {
+        padding: 15px;
+    }
+
+
+    .menu-item {
+        align-items: flex-start;
+    }
+
+
+    .menu-item h3 {
+        font-size: 16px;
+    }
+
+
+    .menu-item p {
+        font-size: 14px;
+    }
+
+
+    .menu-item span {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+
+}
